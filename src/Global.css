@@ -1,0 +1,17 @@
+.link {
+  position:relative;
+  padding-bottom: 4px;
+}
+.link::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: all 0.5s;
+}
+
+.link:hover.link::before {
+  width: 100%;
+}
